@@ -6,7 +6,6 @@ import random
 
 print("Введите количество элементов в массиве: ", end=" ")
 N = int(input())
-
 count = 0
 my_list = []
 for i in range(N):
