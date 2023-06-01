@@ -6,7 +6,6 @@ import random
 
 print("Введите количество элементов в массиве: ", end=" ")
 N = int(input())
-count = 0
 my_list = []
 for i in range(N):
     x1 = random.randint(0, 10)
@@ -14,7 +13,5 @@ for i in range(N):
 print(*my_list)
 print("Введите число Х: ", end=" ")
 X = int(input())
-for i in range(N):
-    if my_list[i] == X:
-        count += 1
+count = my_list.count(X)
 print(f"Число Х встречается {count} раз")
