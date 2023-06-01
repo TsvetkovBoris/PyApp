@@ -7,7 +7,7 @@ import random
 print("Введите количество элементов массива: ", end =" ")
 N = int(input())
 my_list =[]
-for i in range(N)
+for i in range(N):
     x1 = random.randint(0, 10)
     my_list. append(x1)
 print(*my_list)
