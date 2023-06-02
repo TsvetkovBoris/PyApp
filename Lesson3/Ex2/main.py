@@ -4,10 +4,18 @@
 
 import random
 
-print("Введите количество элементов массива: ", end =" ")
-N = int(input())
-my_list =[]
+N = int(input("Введите количество элементов массива: "))
+my_list = []
+number = 0
 for i in range(N):
-    x1 = random.randint(0, 10)
+    x1 = random.randint(0, 100)
     my_list. append(x1)
 print(*my_list)
+X = int(input("Введите число Х: "))
+min_raz = abs(my_list[0] - X)
+for i in range(N):
+    count = abs(my_list[i] - X)
+    if min_raz > count:
+        min_raz = count
+        number = i
+print(f'Самый близкий по величине элемент = {my_list[number]}')
